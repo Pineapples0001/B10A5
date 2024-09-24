@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B10 A5</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        nav,body{
+            font-family: "Lexend",sans-serif;
+        }
+    </style>
+</head>
+<header class="bg-[#F9F7F3] h-28">
+    <nav class="fixed top-0 w-full flex flex-col justify-between px-8 lg:flex-row lg:px-32 py-5 items-center backdrop-blur-md">
+        <div><button class="hidden btn bg-lime-300 px-8 border-none font-semibold text-xl lg:block">Blog</button></div>
+        <div class="flex items-center">
+            <div><img src="assets/logo.png" alt="Logo"></div>
+            <div class="p-4 font-semibold text-xl"><p>Donate Bangladesh</p></div>
+        </div>
+        <div class="flex py-5 lg:py-0">
+            <div class="pr-4"><img src="assets/coin.png" alt="Coin"></div>
+            <div class="items-center text-xl opacity-70">
+                <span class="pr-3">5000</span><span>BDT</span>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+    <div class="mt-20 flex gap-3 justify-center">
+        <div><button class="btn px-8 border-none font-semibold text-xl">Donation</button></div>
+        <div><button class="btn px-8 border-none font-semibold text-xl">History</button></div>
+    </div>
+    <section class="flex flex-col justify-center items-center gap-8 p-8 m-auto mt-24 border-2 border-opacity-10 rounded-lg lg:flex-row lg:w-9/12">
+        <div class="border-2 border-dashed">
+            <div class="h-full w-full"><img src="assets/noakhali.png"></div>
+        </div>
+        <div class="lg:w-6/12">
+            <div class="flex">
+                <div class="pr-2"><img src="assets/coin.png"></div>
+                <div class="items-center text-xl opacity-70">
+                    <span class="pr-1">5000</span><span>BDT</span>
+                </div>
+            </div>
+            <div>
+                <p class="text-xl font-bold py-6">Donate for Flood at Noakhali, Bangladesh</p>
+                <p class="opacity-70 font-light pb-6"> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                <div class="">
+                    <input type="text" placeholder="Write Donation Amount" class="w-full border-2 pl-3 py-3 rounded-lg">
+                </div>
+                <br>
+                <button class="btn w-full bg-lime-300 font-bold text-lg" onclick="my_modal_1.showModal()">Donate Now</button>
+                <dialog id="my_modal_1" class="modal">
+                    <div class="modal-box">
+                        <h3 class="text-lg font-bold">Hello!</h3>
+                        <p class="py-4">Press ESC key or click the button below to close</p>
+                        <div class="modal-action">
+                            <form method="dialog">
+                                <button class="btn">Close</button>
+                            </form>
+                        </div>
+                    </div>
+                </dialog>
+            </div>
+        </div>
+    </section>
+    <section class="flex flex-col justify-center items-center gap-8 p-8 m-auto mt-24 border-2 border-opacity-10 rounded-lg lg:flex-row lg:w-9/12">
+        <div class="border-2 border-dashed">
+            <div class="h-full w-full"><img src="assets/feni.png"></div>
+        </div>
+        <div class="lg:w-6/12">
+            <div class="flex">
+                <div class="pr-2"><img src="assets/coin.png"></div>
+                <div class="items-center text-xl opacity-70">
+                    <span class="pr-1">5000</span><span>BDT</span>
+                </div>
+            </div>
+            <div>
+                <p class="text-xl font-bold py-6">Donate for Flood Relief in Feni,Bangladesh</p>
+                <p class="opacity-70 font-light pb-6">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                <div class="">
+                    <input type="text" placeholder="Write Donation Amount" class="w-full border-2 pl-3 py-3 rounded-lg">
+                </div>
+                <br>
+                <button class="btn w-full bg-lime-300 font-bold text-lg" onclick="my_modal_1.showModal()">Donate Now</button>
+                <dialog id="my_modal_1" class="modal">
+                    <div class="modal-box">
+                        <h3 class="text-lg font-bold">Hello!</h3>
+                        <p class="py-4">Press ESC key or click the button below to close</p>
+                        <div class="modal-action">
+                            <form method="dialog">
+                                <button class="btn">Close</button>
+                            </form>
+                        </div>
+                    </div>
+                </dialog>
+            </div>
+        </div>
+    </section>
+    <section class="flex flex-col justify-center items-center gap-8 p-8 m-auto mt-24 border-2 border-opacity-10 rounded-lg lg:flex-row lg:w-9/12">
+        <div class="border-2 border-dashed">
+            <div class="h-full w-full"><img src="assets/quota-protest.png"></div>
+        </div>
+        <div class="lg:w-6/12">
+            <div class="flex">
+                <div class="pr-2"><img src="assets/coin.png"></div>
+                <div class="items-center text-xl opacity-70">
+                    <span class="pr-1">5000</span><span>BDT</span>
+                </div>
+            </div>
+            <div>
+                <p class="text-xl font-bold py-6">Aid for Injured in the Quota Movement</p>
+                <p class="opacity-70 font-light pb-6">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                <div class="">
+                    <input type="text" placeholder="Write Donation Amount" class="w-full border-2 pl-3 py-3 rounded-lg">
+                </div>
+                <br>
+                <button class="btn w-full bg-lime-300 font-bold text-lg" onclick="my_modal_1.showModal()">Donate Now</button>
+                <dialog id="my_modal_1" class="modal">
+                    <div class="modal-box">
+                        <h3 class="text-lg font-bold">Hello!</h3>
+                        <p class="py-4">Press ESC key or click the button below to close</p>
+                        <div class="modal-action">
+                            <form method="dialog">
+                                <button class="btn">Close</button>
+                            </form>
+                        </div>
+                    </div>
+                </dialog>
+            </div>
+        </div>
+    </section>
+</body>
+<footer class="bg-[#F9F7F3] h-36 mt-24">
+
+</footer>
+</html>
