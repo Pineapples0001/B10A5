@@ -13,12 +13,13 @@
         }
     </style>
 </head>
-<header class="bg-[#F9F7F3] h-28">
-    <nav class="fixed top-0 w-full flex flex-col justify-between px-8 lg:flex-row lg:px-32 py-5 items-center backdrop-blur-md">
-        <div><button id="blog-btn" class="hidden btn bg-lime-300 px-8 border-none font-semibold text-xl lg:block">Blog</button></div>
+<div class="bg-[#F9F7F3] h-56 pt-6 static"></div> 
+<header class="fixed top-0 backdrop-blur-md w-full">
+    <nav class=" w-full flex justify-between px-8 lg:flex-row lg:px-32 py-5 items-center">
+        <div><button id="blog-btn" class="btn bg-lime-300 px-8 border-none font-semibold text-xl">Blog</button></div>
         <div class="flex items-center">
             <div><img src="assets/logo.png" alt="Logo"></div>
-            <div class="p-4 font-semibold text-xl"><p>Donate Bangladesh</p></div>
+            <div class="hidden p-4 font-semibold text-xl lg:block"><p>Donate Bangladesh</p></div>
         </div>
         <div class="flex py-5 lg:py-0">
             <div class="pr-4"><img src="assets/coin.png" alt="Coin"></div>
@@ -27,13 +28,13 @@
             </div>
         </div>
     </nav>
-</header>
-<body>
-    <div class="mt-20 flex gap-3 justify-center">
+    <div class="my-10 flex gap-3 justify-center">
         <div id="show-donation-btn"><button id="donation-btn-color" class="btn px-8 border-none font-semibold text-xl bg-lime-300">Donation</button></div>
         <div id="show-history-btn"><button id="history-btn-color" class="btn px-8 border-none font-semibold text-xl">History</button></div>
     </div>
-    <section id="donation-cards">
+</header>
+<body>
+    <section id="donation-cards" class="mt-64">
         <section class="flex flex-col justify-center items-center gap-8 p-8 m-auto mt-24 border-2 border-opacity-10 rounded-lg lg:flex-row lg:w-9/12">
             <div class="border-2 border-dashed">
                 <div class="h-full w-full"><img src="assets/noakhali.png"></div>
@@ -42,24 +43,28 @@
                 <div class="flex">
                     <div class="pr-2"><img src="assets/coin.png"></div>
                     <div class="items-center text-xl opacity-70">
-                        <span class="pr-1">5000</span><span>BDT</span>
+                        <span class="pr-1" id="event-money-1">5000</span><span>BDT</span>
                     </div>
                 </div>
                 <div>
                     <p class="text-xl font-bold py-6">Donate for Flood at Noakhali, Bangladesh</p>
                     <p class="opacity-70 font-light pb-6"> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                     <div class="">
-                        <input type="text" placeholder="Write Donation Amount" class="w-full border-2 pl-3 py-3 rounded-lg">
+                        <input type="text" placeholder="Write Donation Amount" class="w-full border-2 pl-3 py-3 rounded-lg" id="donate-amount-1">
                     </div>
                     <br>
-                    <button class="btn w-full bg-lime-300 font-bold text-lg" onclick="my_modal_1.showModal()">Donate Now</button>
+                    <button id="donate-btn-1" class="btn w-full bg-lime-300 font-bold text-lg">Donate Now</button>
                     <dialog id="my_modal_1" class="modal">
                         <div class="modal-box">
-                            <h3 class="text-lg font-bold">Hello!</h3>
-                            <p class="py-4">Press ESC key or click the button below to close</p>
-                            <div class="modal-action">
+                            <h3 class="text-3xl font-extrabold text-center pb-4">Congrats!</h3>
+                            <div class="flex justify-center py-4">
+                                <img src="assets/coin.png" alt="Coin">
+                            </div>
+                            <p class="pt-4 text-center">You have donated to humankind</p>
+                            <p class="pt-4 text-center font-extrabold text-xl">Successfully</p>
+                            <div class="modal-action flex justify-center">
                                 <form method="dialog">
-                                    <button class="btn">Close</button>
+                                    <button class="btn">Close Confirmation</button>
                                 </form>
                             </div>
                         </div>
@@ -86,7 +91,7 @@
                     </div>
                     <br>
                     <!-- You can open the modal using ID.showModal() method -->
-                    <button id="donate-btn-2" class="btn w-full bg-lime-300 font-bold text-lg" onclick="my_modal_4.showModal()">Donate Now</button>
+                    <button id="donate-btn-2" class="btn w-full bg-lime-300 font-bold text-lg">Donate Now</button>
                     <dialog id="my_modal_4" class="modal">
                     <div class="modal-box">
                         <h3 class="text-3xl font-extrabold text-center pb-4">Congrats!</h3>
@@ -107,7 +112,7 @@
                 </div>
             </div>
         </section>
-        <section class="flex flex-col justify-center items-center gap-8 p-8 m-auto mt-24 border-2 border-opacity-10 rounded-lg lg:flex-row lg:w-9/12">
+        <!-- <section class="flex flex-col justify-center items-center gap-8 p-8 m-auto mt-24 border-2 border-opacity-10 rounded-lg lg:flex-row lg:w-9/12">
             <div class="border-2 border-dashed">
                 <div class="h-full w-full"><img src="assets/quota-protest.png"></div>
             </div>
@@ -139,16 +144,16 @@
                     </dialog>
                 </div>
             </div>
-        </section>
+        </section> -->
     </section>
-    <section id="history" class="hidden">
+    <section id="history" class="hidden mt-64">
 
     </section>
     <script src="toblog.js"></script>
     <script src="transactions.js"></script>
     <script src="don-his.js"></script>
 </body>
-<footer class="bg-[#F9F7F3] h-36 mt-96">
+<footer class="bg-[#F9F7F3] h-36 mt-96 pt-96">
 
 </footer>
 </html>

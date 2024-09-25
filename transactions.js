@@ -1,7 +1,6 @@
 function DonationAmount(id){
     const money=parseFloat(document.getElementById(id).value);
     if (isNaN(money)){
-        alert('Enter a valid amount')
         return 0;
     }
     else{
@@ -23,12 +22,39 @@ function date() {
 }
 
 
+
+document.getElementById('donate-btn-1').addEventListener('click',function(){
+    const donationAmount=DonationAmount('donate-amount-1');
+    const mainBalanceE=document.getElementById('main-balance');
+    const mainBalance=parseFloat(mainBalanceE.innerText);
+
+    if (mainBalance>=donationAmount && donationAmount>0){
+        my_modal_1.showModal()
+        mainBalanceE.innerText=(mainBalance-donationAmount)
+        EventAmount("event-money-1","donate-amount-1");
+        const currentDate=date();
+        const p = document.createElement('p');
+        p.innerHTML = `
+        <span class="font-bold"> ${donationAmount} Taka is Donated for flood relief at Noakhali, Bangladesh</span><br>
+        <p>Date: ${currentDate}<p>`;
+        document.getElementById("history").appendChild(p);
+        p.classList.add('text-lg', 'mt-4', 'mx-36', 'font-light','p-5','border-2','rounded-lg');
+    }
+    else{
+        alert("Enter a valid amount")
+    }
+})
+
+
+
+
 document.getElementById('donate-btn-2').addEventListener('click',function(){
     const donationAmount=DonationAmount('donate-amount-2');
     const mainBalanceE=document.getElementById('main-balance');
     const mainBalance=parseFloat(mainBalanceE.innerText);
 
     if (mainBalance>=donationAmount && donationAmount>0){
+        my_modal_4.showModal()
         mainBalanceE.innerText=(mainBalance-donationAmount)
         EventAmount("event-money-2","donate-amount-2");
         const currentDate=date();
