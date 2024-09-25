@@ -60,7 +60,7 @@ document.getElementById('donate-btn-2').addEventListener('click',function(){
         const currentDate=date();
         const p = document.createElement('p');
         p.innerHTML = `
-        <span class="font-bold"> ${donationAmount} Taka is Donated for famine-2024 at Feni, Bangladesh</span><br>
+        <span class="font-bold"> ${donationAmount} Taka is Donated for flood relief at Feni, Bangladesh</span><br>
         <p>Date: ${currentDate}<p>`;
         document.getElementById("history").appendChild(p);
         p.classList.add('text-lg', 'mt-4', 'mx-36', 'font-light','p-5','border-2','rounded-lg');
