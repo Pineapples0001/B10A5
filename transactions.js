@@ -69,3 +69,28 @@ document.getElementById('donate-btn-2').addEventListener('click',function(){
         alert("Enter a valid amount")
     }
 })
+
+
+
+
+document.getElementById('donate-btn-3').addEventListener('click',function(){
+    const donationAmount=DonationAmount('donate-amount-3');
+    const mainBalanceE=document.getElementById('main-balance');
+    const mainBalance=parseFloat(mainBalanceE.innerText);
+
+    if (mainBalance>=donationAmount && donationAmount>0){
+        my_modal_5.showModal()
+        mainBalanceE.innerText=(mainBalance-donationAmount)
+        EventAmount("event-money-3","donate-amount-3");
+        const currentDate=date();
+        const p = document.createElement('p');
+        p.innerHTML = `
+        <span class="font-bold"> ${donationAmount} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</span><br>
+        <p>Date: ${currentDate}<p>`;
+        document.getElementById("history").appendChild(p);
+        p.classList.add('text-lg', 'mt-4', 'mx-36', 'font-light','p-5','border-2','rounded-lg');
+    }
+    else{
+        alert("Enter a valid amount")
+    }
+})
