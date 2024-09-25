@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        nav,body{
+            font-family: "Lexend",sans-serif;
+        }
+    </style>
+</head>
+<header class="bg-[#F9F7F3] h-28"></header>
+    <nav class="fixed top-0 w-full flex flex-col justify-between px-8 lg:flex-row lg:px-32 py-5 items-center backdrop-blur-md">
+        <div><button id="home-btn" class="hidden btn bg-lime-300 px-8 border-none font-semibold text-xl lg:block">Home</button></div>
+        <div class="flex items-center">
+            <div><img src="assets/logo.png" alt="Logo"></div>
+            <div class="p-4 font-semibold text-xl"><p>Donate Bangladesh</p></div>
+        </div>
+        <div class="flex py-5 lg:py-0">
+            <div class="pr-4"><img src="assets/coin.png" alt="Coin"></div>
+            <div class="items-center text-xl opacity-70">
+                <span class="pr-3">5000</span><span>BDT</span>
+            </div>
+        </div>
+    </nav>
+</header>
+<body class="">
+    <section class="px-10 mt-14">
+        <div class="flex items-center text-3xl font-bold py-10">
+            <span>Important FAQ</span>
+            <iframe src="https://lottie.host/embed/32c1e5c5-0e72-4475-8687-f85373461b41/X5DtMzS7zY.json" class="absolute ml-28 max-h-18 z-[-1]"></iframe>
+        </div>
+    
+            <dotlottie-player src="https://lottie.host/f5253303-0454-4754-a6ef-771d79c816ee/3u2hepefq9.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player></div>
+          <div class="collapse collapse-arrow bg-white border-2">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-2xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-white border-2">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-2xl font-medium">How do you select an element from DOM?</div>
+            <div class="collapse-content">
+              <p>The getElementById() method of the Document interface returns an Element object representing the element whose id property matches the specified string. Since element IDs are required to be unique if specified, they're a useful way to get access to a specific element quickly.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-white border-2">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-2xl font-medium">What is event delegation in the context of DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-white border-2">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-2xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>The classList object only provide methods to change the class of an element. If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set.</p>
+            </div>
+          </div>
+          <script src="tohome.js"></script>
+    </section>
+</body>
+<footer class="bg-[#F9F7F3] h-36 mt-56"></footer>
+
+</footer>
+</html>
